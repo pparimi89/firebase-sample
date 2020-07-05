@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/firebase-sample",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,18 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/mdbootstrap/css/mdb.min.css",
+              "./node_modules/mdbootstrap/css/style.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/mdbootstrap/js/jquery.min.js",
+              "node_modules/mdbootstrap/js/popper.min.js",
+              "node_modules/mdbootstrap/js/bootstrap.min.js",
+              "node_modules/mdbootstrap/js/mdb.min.js"
+            ]
           },
           "configurations": {
             "production": {

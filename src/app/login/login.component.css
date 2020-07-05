@@ -1,0 +1,60 @@
+#inputdefault {
+    width: 560px;
+    margin-left: 150px;
+}
+
+#size{
+    background: white;
+    margin-left: -25px;
+}
+
+.btn.btn-primary {
+    background: white;
+    /*color: #2874f0;*/
+}
+
+#loginwidth{
+    margin-left: 50px;
+}
+
+.navbar-nav{
+    margin-left: 50px;
+}
+
+.nav-item.dropdown{
+    margin-left: 25px;
+}
+
+.nav-item{
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+/*Carousal*/
+
+.carousel .carousel-indicators li {
+    width: 25px;
+    height: 3px;
+    border-radius: 0%;
+    cursor: pointer;
+}
+
+.carousel .carousel-item{
+    margin-top: 60px;
+    width: 100%;
+    height: 300px;
+}
+
+/*Product Images*/
+#product{
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    margin-top: -60px;
+    box-shadow: 0 0px 5px black;
+}
+.card{
+    margin-top: 100px;
+    height: ;
+    box-shadow: 0 10px 10px slategrey;
+}

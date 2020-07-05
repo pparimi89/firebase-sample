@@ -1,0 +1,25 @@
+<h4>Employee Detail</h4>
+<meta name="viewport" content="width=device-width" />
+<div class="employee-form">
+  <form [formGroup]="employeeForm" class="form-group" (ngSubmit)="onSubmit()">
+    <label>
+      Id:  <input type="text" formControlName="id" required>
+    </label>
+    <label>
+      Name: <input type="text" formControlName="name" required>
+    </label>
+    <label>
+      Sal:  <input type="text" formControlName="sal" required>
+    </label>
+    <button type="submit" [disabled]="!employeeForm.valid">Submit</button>
+  </form>
+</div>
+{{addSuccessMessage}}
+
+<ag-grid-angular
+  class="ag-theme-alpine employee-col-grid"
+  [rowData]="jsonData"
+  [columnDefs]="columnDefs">
+</ag-grid-angular>
+
+
